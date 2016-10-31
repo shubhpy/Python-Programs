@@ -1,0 +1,35 @@
+t=input()
+for i in range(t):
+	N,M,Q = [int(x) for x in raw_input().split(" ")]
+	list1=[]
+	for j in range(Q):
+		list1.append(input())
+	for r in list1:
+		NUM=1
+		DEN=1
+		if r>=N-r:
+			for k in range(r+1,N+1):
+				NUM*=pow(k,k)
+			for l in range(2,N-r+1):
+				DEN*=pow(l,l)
+			print (NUM/DEN)%M
+		else:
+			for k in range(N-r+1,N+1):
+				NUM*=pow(k,k)
+			for l in range(2,r+1):
+				DEN*=pow(l,l)
+			print (NUM/DEN)%M
+
+
+			data2=urllib.urlopen(List[i-1][1])
+str2=data2.read()
+dataFile2=file("dataFile2.txt","w"):
+dataFile2.write(str2)
+dataFile2.close()
+
+
+data = urllib.urlopen("http://search.azlyrics.com/search.php?q="+sQuery,lower()+"&p=0&w=songs")
+str=data.read()
+dataFile= file("dataFile.txt","w")
+dataFile.write(str)
+dataFile.close()

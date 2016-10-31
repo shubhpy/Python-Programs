@@ -1,0 +1,10 @@
+n,m=[int(x) for x in raw_input().split(" ")]
+k=n
+count=0
+if m>n:
+	print n
+else:
+	while n/m!=0:
+		count+=n/m
+		n=(n/m)+(n%m)
+	print k+count

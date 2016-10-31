@@ -1,0 +1,10 @@
+n=input()
+for i in range(n):
+	list1=[]
+	c=0
+	s=raw_input()
+	for j in s:
+		if j not in list1:
+			c+=1
+			list1.append(j)
+	print c

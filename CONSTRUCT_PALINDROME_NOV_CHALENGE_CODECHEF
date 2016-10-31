@@ -1,0 +1,23 @@
+n=input()
+
+def Equal(s,n,m):
+	if s[n]==s[m]:
+		if n+1==len(s)/2:
+			print "YES"
+		else:
+			Equal(s,n+1,m-1)
+	else:
+		NotEqual(s,n,m-1)
+
+def NotEqual(s,n,m):
+	if s[n]==s[m]:
+		if n+1==len(s)/2:
+			print "YES"
+		else:
+
+			NotEqual(s,n+1,m-1)
+	else:
+		print "NO"
+for i in range(n):
+	s=raw_input()
+	Equal(s,0,-1)

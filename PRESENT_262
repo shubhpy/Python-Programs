@@ -1,0 +1,20 @@
+n,m,w=[int(x) for x in raw_input().split(" ")]
+list1=[int(x) for x in raw_input().split(" ")]
+for i in range(m):
+	temp=1
+	list3=list1[:]
+	c=list1.count(min(list1))
+	list2=[]
+	for j in range(c):
+		list2.append(list1.index(min(list1))+j)
+		list1.remove(min(list1))
+	while temp!=0:
+		for k in range(len(list2)):
+			if list2[-1]-list2[k]==w-1:
+				for l in range(w):
+					list3[list2[k]+l]+=1
+				temp=0
+			elif list2[-1]-list2[k]<w-1:
+				if list2[k]==0:
+					list2
+	print list3

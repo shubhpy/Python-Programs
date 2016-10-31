@@ -1,0 +1,8 @@
+sonu 100
+Bani 99
+SAni 74
+Dani 45
+Ayush 23
+Vinay 39
+suhani 10
+
